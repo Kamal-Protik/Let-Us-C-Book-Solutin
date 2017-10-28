@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<stdlib.h>
+#define HLINE for(i=0;i<79;i++)\
+                    printf("%c",196);
+#define VLINE(X,Y) {\
+                        gotoxy(X,Y);\
+                        printf("%c",179);\
+                    }
+
+int main()
+{
+    int i,y;
+
+    gotoxy(1,12);
+    HLINE
+
+    for(y=1;y<25;y++)
+        VLINE(39,y);
+
+    return 0;
+}
+
